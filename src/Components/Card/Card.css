@@ -1,0 +1,86 @@
+ .card{
+    width: 10rem;
+    height:13rem;
+    position: absolute; 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.26);
+    border:7px solid var(--orangeCard);
+    box-shawdow: var(--boxShawdow);
+    border-radius: 20px;
+    padding: 0px 26px 2rem 26px;
+ }
+ .card1{
+   animation: slideDown 1s ease;
+ }
+ .card2{
+   animation: slideRight 1s ease;
+ }
+ .card3{
+   animation: slideTop 1s ease;
+ }
+ .card span:nth-of-type(2){
+    color: var(--gray);
+    font-size: 16px;
+ }
+ .card>img{
+    transform: scale(0.6);
+    margin-bottom: -2rem;
+ }
+ .c-button{
+    background: #ffffff;
+    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #5290fd;
+ }
+ .c-button:hover{
+    cursor: pointer;
+    color: var(--orange);
+ }
+ @keyframes slideLeft{
+   0%{
+      transform: translateX(300px);
+      opacity: 0;
+   }
+   100%{
+      transform: translateX(0);
+      opacity: 1;
+   }
+ }
+ @keyframes slideRight{
+   0%{
+      transform: translateX(-300px);
+      opacity: 0;
+   }
+   100%{
+      transform: translateX(0px);
+      opacity: 1;
+   }
+ } 
+ @keyframes slideTop{
+   0%{
+      transform: translateY(200px);
+      opacity: 0;
+   }
+   100%{
+      transform: translateY(0);
+      opacity: 1;
+   }
+ }
+ @keyframes slideDown{
+   0%{
+      transform: translateY(-200px);
+      opacity: 0;
+   }
+   100%{
+      transform: translateY(0);
+      opacity: 1;
+   }
+ }
+ 
