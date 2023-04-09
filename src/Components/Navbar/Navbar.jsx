@@ -19,7 +19,7 @@ const Navbar=()=>{
               </div> 
           </div>
             <button className="button  n-button">
-                <a href="tel:6398934092"></a>Contact
+                Contact
             </button>
         </div>  
     )
